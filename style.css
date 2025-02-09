@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap');
+:root{
+    --Orange: hsl(25, 97%, 53%);
+    --White: hsl(0, 0%, 100%);
+    --LightGrey: hsl(217, 12%, 63%);
+    --DarkBlue: hsl(213, 19%, 18%);
+    --VeryDarkBlue: hsl(216, 12%, 8%);
+    --fs15:15px;
+    --fw400:400;
+    --fw700:700;
+}
+body{
+    font-family: "Overpass", serif;
+    background-color:var(--VeryDarkBlue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 98vh;
+}
+.product{
+    background:rgb(30, 36, 44);
+    height: 25rem;
+    max-width: 25rem;
+    border-radius: 25px;
+}
+.product .container{
+    margin: 2rem;
+    height: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.product .container .product-image img{
+    background-color:hsl(213.75deg 17.02% 18.43%);
+    padding: 0.8rem;
+    border-radius: 100%;
+}
+.product .container .product-details{
+    color: var(--White);
+    font-size: 15px;
+    position: relative;
+    bottom: 1rem;
+}
+.product .container .product-paragraph{
+    color: var(--LightGrey);
+    position: relative;
+    bottom: 2.5rem;
+}
+.product .container .number-list {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 1.5rem;
+}
+
+.product .container .number-list span{
+    color: var(--LightGrey);
+    background-color: rgb(39, 46, 55);
+    border-radius: 100%;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.product .container .number-list span:hover{
+    background-color: var(--Orange) !important;
+    color: var(--VeryDarkBlue) !important;
+}
+.product .container button{
+    color: var(--VeryDarkBlue);
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 2rem;
+    height: 2.7rem;
+    font-weight: var(--fw700);
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+.product .container button:hover{
+    cursor: pointer;
+    background-color:var(--White)
+}
+
+.message{
+    background:rgb(30, 36, 44);
+    height: 25rem;
+    width: 25rem;
+    border-radius: 25px;
+}
+.message .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.message .container img{
+    width: 10rem;
+}
+.message .container .value{
+    color: var(--Orange);
+    position: relative;
+    top: 1rem;
+    font-size: 15px;
+    background-color: hsl(213.75deg 17.02% 18.43%);
+    border-radius: 2rem;
+    padding: 0.5rem 1rem;
+}
+.message .container h1{
+    color: var(--White);
+    font-size: 25px;
+    position: relative;
+    top: 1.5rem;
+}
+.message .container p{
+    color: var(--LightGrey);
+    font-size: 15px;
+    margin-top: 2rem;
+    width: 21rem;
+}
+.message .container p span{
+    display: flex;
+    justify-content: center;
+}
+.message{
+    display: none;
+}
